@@ -6,7 +6,7 @@
 ## Get image URL
 1. Google search for the image.
 2. Right click the image.
-3. Click Copy image address
+3. Click Copy image address.
 
 ## URL Samples
 * https://<span></span>memeprod.sgp1.digitaloceanspaces.com/meme/bae10371ebfaefd41a6db9733506c458.png
