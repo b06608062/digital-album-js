@@ -1,0 +1,231 @@
+/* 清除預設樣式 */
+*{
+    margin:0;
+    padding:0
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: linear-gradient(to top, #08105a, #0612bd, #0ac7e9);
+    height: 100%;
+    width: 100%;
+    font-family:'Arial Black';
+}
+
+#top{
+    text-align: center;
+    font-size: 8vh;
+    color:blue;
+    height: 16%;
+    width: 100%;
+    line-height: 16vh;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    animation: shake 3s infinite;
+}
+
+#menu{
+    height: 8%;
+    width: 100%;
+    text-align: center;
+    line-height: 3vh;
+    font-size: 4vh;
+}
+
+#menu > p{
+    display: inline-block;
+    color:white;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#menu > p:hover{
+    transform:scale(1.2,1.2);
+}
+
+.ischosen{
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    color: red !important; 
+}
+
+#container{
+    width: 100%;
+    height: 66%;
+}
+
+#left-box{
+    display: inline-block;
+    position: relative;
+    height:100%;
+    width: 20%;
+    overflow:scroll;
+    background-image: url("./beach.png");
+    background-size: cover;
+    margin-left:4vw;
+}
+
+.pic{
+    position: relative;
+    height: 31%;
+    width: 80%;
+    background-size: cover;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 1.5vh;
+    opacity: 70%;
+}
+
+.pic:hover{
+    opacity: 100%;
+    transform:scale(1.1,1.1);
+}
+
+.focus{
+    outline: 0.4vw dashed red;
+    opacity: 100%;  
+}
+
+input{
+    height: 31%;
+    width: 80%;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 1.5vh;
+    text-align: center;
+}
+
+#right-box{
+    display: inline-block;
+    position: relative; 
+    height:100%;          
+    width: 70%;
+}
+
+#display{
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    margin-left: 3vw;
+}
+
+@keyframes shake {
+    40% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(-5deg);
+    }
+
+    55% {
+        transform: rotate(5deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    body{
+        background: linear-gradient(to top, #d60606, #e07108, #f9fd03);
+    }
+    #top{
+        color:rgb(255, 72, 0);
+    }
+    .pic{
+        margin-top: 1.9vh;
+        margin-bottom: 1.4vh; 
+    }   
+    #display{
+        margin-left: 2.9vw;
+    }   
+    button{
+        font-size: 1.5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .pic{
+        margin-top: 1.8vh;
+        margin-bottom: 1.3vh; 
+    }   
+    #display{
+        margin-left: 2.8vw;
+    }     
+}
+
+@media (max-width: 600px) {
+    .pic{
+        margin-top: 1.7vh;
+        margin-bottom: 1.2vh; 
+    }   
+    #display{
+        margin-left: 2.7vw;
+    }     
+}
+
+@media (max-width: 450px) {
+    .pic{
+        margin-top: 1.5vh;
+        margin-bottom: 1vh; 
+    }   
+    #display{
+        margin-left: 2.5vw;
+    }  
+    li{
+        font-size: 0% !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .pic{
+        margin-top: 1.5vh;
+        margin-bottom: 0.5vh; 
+    }   
+    #display{
+        margin-left: 2.2vw;
+    }  
+    #menu>p{
+        font-size: 5px;
+    }
+}
+
+#bottom{
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+button{
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    margin-left: 21.5vw;
+    margin-top: 1vh;
+    border: 0px;
+    font-size: 2px;
+    background-image: url("del.png");
+    background-size: cover;
+    cursor: pointer;
+}
+button:hover{
+    transform:scale(1.1,1.1);
+}
+
+#fix{
+    position: fixed;
+    width: 20%;
+    height: 20%;
+    left: 4vw;
+    top: 1vh;
+    font-size: 2.5vw;
+}
+
+ul{
+    list-style-type: none;
+}

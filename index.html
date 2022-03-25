@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+        <div id="fix">
+            <ul>
+                <li id="total">total : 11</li>
+                <li id="chosen">this album : 6</li>
+                <li id="order">now at : 1</li>
+            </ul>
+        </div>
+        <div id="top">Digital Album</div>
+        <div id="menu">
+            <p onclick="ChangeAlbum(dic[this.innerHTML], 0)">PatrickStar</p>
+            <p onclick="ChangeAlbum(dic[this.innerHTML], 1)">Meme</p>
+            <p onclick="Alert()">MyAlbum</p>
+        </div>
+
+        <div id="container">
+            <div id="left-box">
+            </div>
+            <div id="right-box">
+                <img id="display" src="">
+            </div>
+        </div>
+        <div id="bottom">
+            <button onclick="del()"></button>
+        </div>
+        <script src="./main.js"></script>
+</body>
+</html>
