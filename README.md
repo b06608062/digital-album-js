@@ -8,7 +8,7 @@
 2. Right click the image.
 3. Click Copy image address
 
-## URL Examples：
+## Examples
 * https://<span></span>memeprod.sgp1.digitaloceanspaces.com/meme/bae10371ebfaefd41a6db9733506c458.png
 * https://<span></span>memeprod.sgp1.digitaloceanspaces.com/meme/23bcb062cc34426ee2e3ca530c3ea427.png
 * https://<span></span>img.ttshow.tw/images/author/lui/5(1).jpg
