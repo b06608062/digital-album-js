@@ -1,33 +1,33 @@
 /* 清除預設樣式 */
-*{
-    margin:0;
-    padding:0
+* {
+    margin: 0;
+    padding: 0;
 }
 
-html{
+html {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     background: linear-gradient(to top, #08105a, #0612bd, #0ac7e9);
     height: 100%;
     width: 100%;
-    font-family:'Arial Black';
+    font-family: 'Arial Black';
 }
 
-#top{
+#top {
     text-align: center;
     font-size: 8vh;
-    color:blue;
+    color: blue;
     height: 16%;
     width: 100%;
     line-height: 16vh;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     animation: shake 3s infinite;
 }
 
-#menu{
+#menu {
     height: 8%;
     width: 100%;
     text-align: center;
@@ -35,40 +35,40 @@ body{
     font-size: 4vh;
 }
 
-#menu > p{
+#menu>p {
     display: inline-block;
-    color:white;
+    color: white;
     cursor: pointer;
     margin-left: 2%;
     margin-right: 2%;
 }
 
-#menu > p:hover{
-    transform:scale(1.2,1.2);
+#menu>p:hover {
+    transform: scale(1.2, 1.2);
 }
 
-.ischosen{
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+.ischosen {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     color: red !important; 
 }
 
-#container{
+#container {
     width: 100%;
     height: 66%;
 }
 
-#left-box{
+#left-box {
     display: inline-block;
     position: relative;
-    height:100%;
+    height: 100%;
     width: 20%;
-    overflow:scroll;
+    overflow: scroll;
     background-image: url("./beach.png");
     background-size: cover;
-    margin-left:4vw;
+    margin-left: 4vw;
 }
 
-.pic{
+.pic {
     position: relative;
     height: 31%;
     width: 80%;
@@ -79,17 +79,17 @@ body{
     opacity: 70%;
 }
 
-.pic:hover{
+.pic:hover {
     opacity: 100%;
-    transform:scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
 }
 
-.focus{
+.focus {
     outline: 0.4vw dashed red;
     opacity: 100%;  
 }
 
-input{
+input {
     height: 31%;
     width: 80%;
     margin-left: 2vw;
@@ -98,14 +98,14 @@ input{
     text-align: center;
 }
 
-#right-box{
+#right-box {
     display: inline-block;
     position: relative; 
-    height:100%;          
+    height: 100%;          
     width: 70%;
 }
 
-#display{
+#display {
     position: relative;
     background-size: cover;
     height: 100%;
@@ -132,76 +132,87 @@ input{
 }
 
 @media (max-width: 1000px) {
-    body{
+    body {
         background: linear-gradient(to top, #d60606, #e07108, #f9fd03);
     }
-    #top{
-        color:rgb(255, 72, 0);
+
+    #top {
+        color: rgb(255, 72, 0);
     }
-    .pic{
+
+    .pic {
         margin-top: 1.9vh;
         margin-bottom: 1.4vh; 
-    }   
-    #display{
+    } 
+
+    #display {
         margin-left: 2.9vw;
-    }   
-    button{
+    } 
+
+    button {
         font-size: 1.5px;
     }
 }
 
 @media (max-width: 800px) {
-    .pic{
+    .pic {
         margin-top: 1.8vh;
         margin-bottom: 1.3vh; 
-    }   
-    #display{
+    }
+
+    #display {
         margin-left: 2.8vw;
-    }     
+    }   
 }
 
 @media (max-width: 600px) {
-    .pic{
+    .pic {
         margin-top: 1.7vh;
         margin-bottom: 1.2vh; 
-    }   
-    #display{
+    }
+
+    #display {
         margin-left: 2.7vw;
-    }     
+    }
 }
 
 @media (max-width: 450px) {
-    .pic{
+    .pic {
         margin-top: 1.5vh;
         margin-bottom: 1vh; 
-    }   
-    #display{
+    }
+
+    #display {
         margin-left: 2.5vw;
-    }  
-    li{
+    }
+
+    li {
         font-size: 0% !important;
     }
 }
 
 @media (max-width: 350px) {
-    .pic{
+    .pic {
         margin-top: 1.5vh;
         margin-bottom: 0.5vh; 
-    }   
-    #display{
+    }
+
+    #display {
         margin-left: 2.2vw;
-    }  
-    #menu>p{
+    }
+
+    #menu>p {
         font-size: 5px;
     }
 }
 
-#bottom{
+#bottom {
     position: relative;
     width: 100%;
     height: 10%;
 }
-button{
+
+button {
     position: absolute;
     width: 5vh;
     height: 5vh;
@@ -213,11 +224,12 @@ button{
     background-size: cover;
     cursor: pointer;
 }
-button:hover{
-    transform:scale(1.1,1.1);
+
+button:hover {
+    transform: scale(1.1, 1.1);
 }
 
-#fix{
+#fix {
     position: fixed;
     width: 20%;
     height: 20%;
@@ -226,6 +238,6 @@ button:hover{
     font-size: 2.5vw;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
