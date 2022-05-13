@@ -75,7 +75,7 @@ var changeAlbum = function(paths, No) {
     } else {
         display.src = "";
     }
-}
+};
 
 function del() {
     if (highlightAlbum) {
@@ -87,6 +87,6 @@ function del() {
         PatrickStar.splice(highlightPhoto, 1);
         changeAlbum(PatrickStar, highlightAlbum);
     }
-}
+};
 
 changeAlbum(PatrickStar, highlightAlbum);
